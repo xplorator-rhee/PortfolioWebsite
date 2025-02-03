@@ -5,8 +5,8 @@ from fastapi.templating import Jinja2Templates
 
 blogs = [
     {"id": 1,
-     "title": "Blueprints: The journey of self-taught full-stack"
-     "date": "2025-02-02 20:17"
+     "title": "Blueprints: The journey of self-taught full-stack",
+     "date": "2025-02-02 20:17",
      "content": "Hello World!"
      }
 ]
