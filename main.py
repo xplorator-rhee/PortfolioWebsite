@@ -1,7 +1,6 @@
 from fastapi import FastAPI, APIRouter
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
-from fastapi.templating import Jinja2Templates
 
 blogs = [
     {"id": 1,
@@ -14,8 +13,6 @@ blogs = [
 app = FastAPI()
 api_router = APIRouter()
 app.mount("/static", StaticFiles(directory="static"), name="static")
-
-templates = Jinja2Templates(directory="templates")
 
 @api_router.get("/", status_code=200)
 def root() -> dict:
