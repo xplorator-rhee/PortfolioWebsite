@@ -23,6 +23,6 @@ def fetch_blog(*, blog_id: int) -> dict:
     for blog in blogs:
         if blog["id"] == blog_id:
             result = blog
-    return blog[0]
+    return result["content"]
 
 app.include_router(api_router)
